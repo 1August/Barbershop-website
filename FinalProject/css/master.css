@@ -1,0 +1,367 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Proxima Nova Regular";
+  src: url("../fonts/hilborn/Hilborn4.otf") format("opentype");
+}
+* {
+  cursor: default;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #040404;
+  color: #fff;
+  font-family: "Sorts Mill Goudy", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  opacity: 70%;
+}
+
+a:hover {
+  color: #fff;
+  opacity: 100%;
+}
+
+.btnTop {
+  transition: all 1s ease;
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border: none;
+  border-radius: 100px;
+  width: 70px;
+  height: 70px;
+  align-items: center;
+  text-align: center;
+  z-index: 99;
+  color: #fff;
+  background-color: rgba(161, 106, 56, 0.6);
+  font-size: 25px;
+}
+
+.btnTop::after {
+  content: "";
+  font-family: FontAwesome;
+}
+
+.show {
+  display: inline-block;
+}
+
+.btn:hover {
+  color: #a16a38;
+}
+
+h1 {
+  font-size: 5.7em;
+  font-weight: 900;
+  color: #719274;
+  letter-spacing: 0.3em;
+}
+
+h2 {
+  font-weight: 900;
+  color: #a16a38;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+h3 {
+  color: #719274;
+  font-size: 3em;
+  letter-spacing: 4px;
+  word-spacing: 5px;
+  margin-bottom: 25px;
+  line-height: 1em;
+}
+
+p {
+  font-size: 2em;
+  letter-spacing: 3px;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.show {
+  display: block;
+}
+
+.btn {
+  color: #a16a38;
+  font-size: 2em;
+  padding: 5px 20px;
+}
+.btn :hover {
+  padding: 5px 20px;
+  box-shadow: 0 0 15px #a16a38;
+  border-radius: 3px;
+  box-shadow: inset 0 0 5px #a16a38;
+}
+
+.header .nav {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #040404;
+  padding: 2em 0 0.8em 0;
+}
+.header .nav ul {
+  font-size: 1.2em;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.header .nav ul li {
+  padding-left: 1.85em;
+}
+.header .nav ul li:first-child {
+  padding: 0;
+}
+.header .nav li.logoLi {
+  position: relative;
+  margin: -15px 0 0 0;
+}
+.header .logo {
+  font-weight: bold;
+  font-size: 1.8em;
+  color: #a16a38;
+}
+
+.header .offer {
+  padding: 7em 0;
+  margin: 0 0 70px 0;
+  background: url("../img/background40.jpeg") no-repeat center top;
+  background-size: cover;
+}
+.header .offer h1 {
+  text-align: center;
+  line-height: 1.8em;
+  font-family: "Raleway", sans-serif;
+  text-shadow: 2px 2px 0 #a16a38;
+  text-shadow: -2px -2px 0 #a16a38;
+  text-shadow: 2px -2px 0 #a16a38;
+  text-shadow: -2px 2px 0 #a16a38;
+}
+.header .offer h2 {
+  font-size: 2em;
+  font-weight: 500;
+  color: #719274;
+  font-family: "Raleway", sans-serif;
+  text-shadow: 1px 1px 0 #000;
+  text-shadow: -1px -1px 0 #000;
+  text-shadow: 1px -1px 0 #000;
+  text-shadow: -1px 1px 0 #000;
+}
+.header .offer p {
+  font-size: 1.8em;
+  text-align: center;
+  line-height: 1.8em;
+  letter-spacing: 0.2em;
+  font-weight: lighter;
+}
+.header .offer .container {
+  text-align: center;
+  margin: 0 auto;
+}
+.header .offer .container p {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: normal;
+  margin: 30px 0;
+}
+
+.main .container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 150px 0;
+}
+.main .container .left {
+  width: 50%;
+  text-align: center;
+}
+.main .container .left img {
+  transition: all 1.2s ease;
+  opacity: 65%;
+}
+.main .container .left img:hover {
+  opacity: 100%;
+  transform: rotate(190deg);
+}
+.main .container .right {
+  width: 45%;
+  margin: 0 auto;
+}
+.main .container .right p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.4em;
+  line-height: 1.8em;
+}
+.main .row > * {
+  padding-left: 0;
+  padding-right: 0;
+}
+.main .row {
+  align-items: center;
+  display: flex;
+  padding-bottom: 50px;
+}
+.main .row .col-2 img, .main .row .col-3 img {
+  width: 100%;
+}
+.main .row .col-2 .firstColImg, .main .row .col-3 .firstColImg {
+  margin-bottom: 20px;
+}
+.main .part1 .container {
+  padding-top: 40px;
+}
+.main .part2 {
+  cursor: pointer;
+}
+.main .part2 .row {
+  padding: 0;
+  margin: 30px 0 120px 0;
+}
+.main .part3 {
+  padding-top: 8px;
+  text-align: center;
+}
+.main .part3 p {
+  font-size: 1.2em;
+}
+.main .part3 .number {
+  color: #a16a38;
+  font-size: 5em;
+}
+.main .part3 h4 {
+  font-size: 2.6em;
+  margin-bottom: 10px;
+}
+.main .part3 .container .row {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.main .part3 .container .row .col-4 {
+  width: 30%;
+}
+.main .part3 .container:first-child .row {
+  padding-bottom: 50px;
+}
+.main .part3 .container:first-child {
+  padding-bottom: 0;
+}
+.main .part4 {
+  align-items: center;
+}
+.main .part4 .container .row {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+.main .part4 ul {
+  color: #a16a38;
+  font-size: 1.8em;
+  line-height: 2em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.main .part4 iframe {
+  width: 100%;
+}
+.main .part5 {
+  padding: 50px 0;
+}
+.main .part5 .container {
+  display: block;
+  padding-top: 0;
+}
+.main .part5 .container .col-sm-10 {
+  font-size: 1.2em;
+  width: 100%;
+}
+.main .part5 .container .col-form-label {
+  margin: 10px 0;
+  font-size: 2em;
+  width: 100% !important;
+}
+.main .part5 .row {
+  padding: 10px 5px;
+}
+.main .part5 .formInMain {
+  border: 2px solid #a16a38;
+  box-shadow: 0 0 15px #a16a38;
+  border-radius: 3px;
+  box-shadow: inset 0 0 5px #a16a38;
+  padding: 10px 70px 50px 70px;
+  width: 60%;
+  margin: 0 auto;
+}
+.main .part5 .formInMain .alert-added {
+  display: none;
+}
+.main .part5 .formInMain fieldset.row.mb-3 {
+  margin: 10px 0 20px 0;
+}
+.main .part5 .formInMain textarea {
+  resize: none;
+}
+.main .part5 .formInMain input[type=radio] {
+  background-color: #719274;
+}
+.main .part5 .formInMain .btn {
+  margin-top: 20px;
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+}
+.main .part5 h3 {
+  color: #a16a38;
+  font-weight: bold;
+  margin: 40px;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.footer .container-fluid {
+  padding-top: 30px;
+}
+.footer .logo {
+  text-align: center;
+  font-size: 2.3em;
+}
+.footer ul {
+  list-style: none;
+}
+.footer ul li {
+  margin-top: 20px;
+}
+.footer a {
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 850px) {
+  #brick {
+    display: none;
+  }
+}
